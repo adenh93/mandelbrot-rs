@@ -3,10 +3,10 @@ use clap::Parser;
 /// Generates a mandelbrot set.
 /// Uses sane defaults for all parameters, while allowing customisation.
 #[derive(Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
+#[clap(author, about)]
 pub struct Args {
     /// Maximum amount of iterations
-    #[clap(long, value_parser, default_value_t = 1_000)]
+    #[clap(short, long, value_parser, default_value_t = 1_000)]
     pub max_iters: usize,
 
     /// Minimum horizontal bounds
