@@ -1,3 +1,8 @@
+mod args;
+use clap::Parser;
+use mandelbrot_rs::{run, Args};
+
 fn main() {
-    println!("Hello, world!");
+    let args = Args::parse();
+    run(&args);
 }
