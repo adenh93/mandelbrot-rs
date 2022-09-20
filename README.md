@@ -1,2 +1,2 @@
-# mandlebrot-rs
-Generates a mandlebrot set based on CLI arguments
+# mandelbrot-rs
+Generates a mandelbrot set based on CLI arguments
